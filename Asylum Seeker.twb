@@ -1,0 +1,1679 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Asylum applications in Europe' inline='true' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Asylum applications in Europe' name='textscan.12j8tb61ua593w1cyirsn0i4yhcu'>
+            <connection class='textscan' directory='C:/PROJECT FILES/Tableau Projects/Data Sets' filename='Asylum applications in Europe.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.12j8tb61ua593w1cyirsn0i4yhcu' name='Asylum applications in Europe.csv' table='[Asylum applications in Europe#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='2017 Applications' ordinal='0' />
+            <column datatype='string' name='Application Type' ordinal='1' />
+            <column datatype='string' name='Top 5' ordinal='2' />
+            <column datatype='boolean' name='UK' ordinal='3' />
+            <column datatype='string' name='COUNTRY' ordinal='4' />
+            <column datatype='integer' name='2018 Applications' ordinal='5' />
+            <column datatype='string' name='DESTINATION' ordinal='6' />
+            <column datatype='string' name='Country of Origin' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='integer' name='Number of Records' ordinal='9' />
+            <column datatype='integer' name='Year' ordinal='10' />
+            <column datatype='integer' name='Applications' ordinal='11' />
+            <column datatype='string' name='SEX' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2017 Applications</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2017 Applications]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>2017 Applications</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Application Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Application Type]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Application Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Top 5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Top 5]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Top 5</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UK</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[UK]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>UK</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2018 Applications</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2018 Applications]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>2018 Applications</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DESTINATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DESTINATION]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>DESTINATION</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country of Origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country of Origin]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Country of Origin</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Applications</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Applications]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>Applications</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SEX]</local-name>
+            <parent-name>[Asylum applications in Europe.csv]</parent-name>
+            <remote-alias>SEX</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='YoY Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(ZN(SUM([Applications])) - LOOKUP(ZN(SUM([Applications])), -1)) / ABS(LOOKUP(ZN(SUM([Applications])), -1))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='UPPER([COUNTRY])' />
+      </column>
+      <column caption='DESTINATION' datatype='string' name='[Calculation_692991394975670275]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Set 3] THEN [Calculation_692991394975485954]&#13;&#10;ELSE &apos;OTHER EU+&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Country of Origin]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country1' datatype='string' hidden='true' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Destination' datatype='string' hidden='true' name='[DESTINATION]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+      <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <column-instance column='[Set 3]' derivation='InOut' name='[io:Set 3:nk]' pivot='key' type='nominal' />
+      <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+      <group caption='EU+' name='[EU+]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;EUROPEAN UNION - 28 COUNTRIES&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;ICELAND&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;LIECHTENSTEIN&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;NORWAY&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;SWITZERLAND&quot;' />
+        </groupfilter>
+      </group>
+      <group caption='EU &amp; Top 5' delimiter=',' name='[Set 1]' name-style='unqualified'>
+        <groupfilter function='union'>
+          <groupfilter field='[EU]' function='reference' />
+          <groupfilter field='[Top 5 Applications]' function='reference' />
+        </groupfilter>
+      </group>
+      <group caption='Top 10 Countries' name='[Set 3]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;BELGIUM&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;FRANCE&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;GERMANY (UNTIL 1990 FORMER TERRITORY OF THE FRG)&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;GREECE&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;ITALY&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;NETHERLANDS&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;SPAIN&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;SWEDEN&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;SWITZERLAND&quot;' />
+          <groupfilter function='member' level='[Calculation_692991394975485954]' member='&quot;UNITED KINGDOM&quot;' />
+        </groupfilter>
+      </group>
+      <group caption='Top 5 Applications' name='[Top 5 Applications]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;France&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;FRANCE&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;GERMANY&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Germany (until 1990 former territory of the FRG)&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Greece&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;GREECE&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Italy&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;ITALY&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;Spain&quot;' />
+          <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;SPAIN&quot;' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.394191' group-percentage='0.261411' measure-ordering='alphabetic' measure-percentage='0.344398' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[io:Set 3:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2018 Apllications'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[2018 Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Application Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='YoY Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([Applications])) - LOOKUP(ZN(SUM([Applications])), -1)) / ABS(LOOKUP(ZN(SUM([Applications])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([COUNTRY])' />
+            </column>
+            <column datatype='string' name='[SEX]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Application Type]' derivation='None' name='[none:Application Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SEX]' derivation='None' name='[none:SEX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2018 Applications]' derivation='Sum' name='[sum:2018 Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[usr:Calculation1:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]' />
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]'>
+            <groupfilter function='member' level='[none:Application Type:nk]' member='&quot;Asylum applicant&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]'>
+            <groupfilter function='member' level='[none:SEX:nk]' member='&quot;Total&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' />
+              <lod column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'>IN TOTAL, THERE WERE</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Semibold' fontsize='36'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'>ASYLUM APPLICATIONS IN 2018 IN EU+ COUNTRIES</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{227A007B-D9F4-4B2C-8716-6264D7B2E949}' />
+    </worksheet>
+    <worksheet name='2018 Apllications (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[2018 Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Application Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='YoY Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([Applications])) - LOOKUP(ZN(SUM([Applications])), -1)) / ABS(LOOKUP(ZN(SUM([Applications])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([COUNTRY])' />
+            </column>
+            <column datatype='string' name='[SEX]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Application Type]' derivation='None' name='[none:Application Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SEX]' derivation='None' name='[none:SEX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2018 Applications]' derivation='Sum' name='[sum:2018 Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[usr:Calculation1:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]' />
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]'>
+            <groupfilter function='member' level='[none:Application Type:nk]' member='&quot;Asylum applicant&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]'>
+            <groupfilter function='member' level='[none:SEX:nk]' member='&quot;Total&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='286' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' />
+              <lod column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'>OF THOSE</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Semibold' fontsize='36'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'>WERE APPLICATIONS TO EU COUNTRIES</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC586624-BF04-47E0-897A-08B1CD3E22BA}' />
+    </worksheet>
+    <worksheet name='2018 first'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[2018 Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Application Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='YoY Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([Applications])) - LOOKUP(ZN(SUM([Applications])), -1)) / ABS(LOOKUP(ZN(SUM([Applications])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([COUNTRY])' />
+            </column>
+            <column datatype='string' name='[SEX]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Application Type]' derivation='None' name='[none:Application Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SEX]' derivation='None' name='[none:SEX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2018 Applications]' derivation='Sum' name='[sum:2018 Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[usr:Calculation1:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]' />
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]'>
+            <groupfilter function='member' level='[none:Application Type:nk]' member='&quot;First time applicant&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]'>
+            <groupfilter function='member' level='[none:SEX:nk]' member='&quot;Total&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' />
+              <lod column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'>EU+ COUNTRIES ISSUED</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Semibold' fontsize='36'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontsize='8'>DECISIONS IN THE FIRST INSTANCE IN 2018</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FE46C28E-2C54-4077-8685-69D3F52A89EC}' />
+    </worksheet>
+    <worksheet name='Application Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#3f9ea1' fontname='Tableau Light' fontsize='10'>51%</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Light' fontsize='10'> FEWER APPLICATIONS THAN THE PEAK IN 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[2018 Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Application Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[SEX]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Application Type]' derivation='None' name='[none:Application Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SEX]' derivation='None' name='[none:SEX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Applications]' derivation='Sum' name='[pcdf:sum:Applications:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[2018 Applications]' derivation='Sum' name='[sum:2018 Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]'>
+            <groupfilter function='member' level='[none:Application Type:nk]' member='&quot;First time applicant&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]'>
+            <groupfilter function='member' level='[none:SEX:nk]' member='&quot;Total&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' value='61' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='text-orientation' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' />
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Applications:&#9;</run>
+                <run bold='true'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]&gt; (&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]&gt; vs. prior year)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]</rows>
+        <cols>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{C1E995A8-0416-4D81-B39F-FA52E83D724B}' />
+    </worksheet>
+    <worksheet name='First Decision Trends (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>A </run>
+            <run bold='true' fontalignment='1' fontcolor='#3f9ea1' fontsize='10'>53%</run>
+            <run bold='true' fontalignment='1' fontsize='10'> DECREASE COMPARED TO 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[2018 Applications]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Application Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='YoY Change' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(ZN(SUM([Applications])) - LOOKUP(ZN(SUM([Applications])), -1)) / ABS(LOOKUP(ZN(SUM([Applications])), -1))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([COUNTRY])' />
+            </column>
+            <column datatype='string' name='[SEX]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Application Type]' derivation='None' name='[none:Application Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_692991394975485954]' derivation='None' name='[none:Calculation_692991394975485954:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SEX]' derivation='None' name='[none:SEX:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Applications]' derivation='Sum' name='[pcdf:sum:Applications:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[2018 Applications]' derivation='Sum' name='[sum:2018 Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[usr:Calculation1:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]'>
+            <groupfilter function='member' level='[none:Application Type:nk]' member='&quot;First time applicant&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975485954:nk]'>
+            <groupfilter function='member' level='[none:Calculation_692991394975485954:nk]' member='&quot;EU&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]'>
+            <groupfilter function='member' level='[none:SEX:nk]' member='&quot;Total&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975485954:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</column>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' value='61' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='text-orientation' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' />
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Applications:&#9;</run>
+                <run bold='true'>&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]&gt; (&lt;[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]&gt; vs. prior year)</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[pcdf:sum:Applications:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]</rows>
+        <cols>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{B660497B-BFF5-42D6-A363-46718A91EED1}' />
+    </worksheet>
+    <worksheet name='Top 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>OF THOSE, 91% WERE MADE TO ONLY 10 COUNTRIES</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asylum applications in Europe' name='federated.14e0iuv0mcymoo11mnuug1j4lyxt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14e0iuv0mcymoo11mnuug1j4lyxt'>
+            <column datatype='integer' name='[Applications]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='COUNTRY' datatype='string' name='[Calculation_692991394975485954]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER([COUNTRY])' />
+            </column>
+            <column caption='DESTINATION' datatype='string' name='[Calculation_692991394975670275]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Set 3] THEN [Calculation_692991394975485954]&#13;&#10;ELSE &apos;OTHER EU+&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[Set 3]' derivation='InOut' name='[io:Set 3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_692991394975670275]' derivation='None' name='[none:Calculation_692991394975670275:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Applications]' derivation='Sum' name='[sum:Applications:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975670275:nk]'>
+            <groupfilter from='&quot;BELGIUM&quot;' function='range' level='[none:Calculation_692991394975670275:nk]' to='&quot;SWITZERLAND&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975670275:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975670275:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='in-tooltip' field='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk]' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='rows' value='2' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk]' />
+              <text column='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk] / [federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975670275:nk])</rows>
+        <cols>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:Applications:qk]</cols>
+      </table>
+      <simple-id uuid='{DA69551D-51B1-4663-8455-69CBE2F37EE8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#3f9ea1' fontname='Tableau Semibold' fontsize='20'>ASYLUM APPLICATIONS TO EU+ COUNTRIES HAVE REDUCED DRAMATICALLY SINCE 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97298' id='22' param='horz' type='layout-flow' w='98614' x='693' y='1351'>
+            <zone h='97298' id='17' param='horz' type='layout-flow' w='98614' x='693' y='1351'>
+              <zone h='97298' id='14' param='horz' type='layout-flow' w='98614' x='693' y='1351'>
+                <zone h='97298' id='11' param='horz' type='layout-flow' w='98614' x='693' y='1351'>
+                  <zone h='97298' id='6' param='vert' type='layout-flow' w='98614' x='693' y='1351'>
+                    <zone h='7601' id='8' type='title' w='98614' x='693' y='1351'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='89697' id='3' param='vert' type='layout-flow' w='98614' x='693' y='8952'>
+                      <zone h='89697' id='7' type='layout-basic' w='98614' x='693' y='8952'>
+                        <zone h='69108' id='9' name='Top 10' w='36010' x='693' y='29541'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='69108' id='12' name='Application Trends' w='29949' x='36703' y='29541'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='69108' id='15' name='First Decision Trends (2)' w='32655' x='66652' y='29541'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='20589' id='18' name='2018 Apllications' show-title='false' w='36010' x='693' y='8952'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='20589' id='19' name='2018 Apllications (2)' show-title='false' w='29949' x='36703' y='8952'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='20589' id='20' name='2018 first' show-title='false' w='32655' x='66652' y='8952'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#3f9ea1' fontname='Tableau Semibold' fontsize='20'>ASYLUM APPLICATIONS TO EU+ COUNTRIES HAVE REDUCED DRAMATICALLY SINCE 2015</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97298' id='30' param='vert' type='layout-flow' w='98614' x='693' y='1351'>
+                <zone h='7601' id='8' type='title' w='98614' x='693' y='1351'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='156' h='20589' id='18' is-fixed='true' name='2018 Apllications' show-title='false' w='36010' x='693' y='8952'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='156' h='20589' id='19' is-fixed='true' name='2018 Apllications (2)' show-title='false' w='29949' x='36703' y='8952'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='156' h='20589' id='20' is-fixed='true' name='2018 first' show-title='false' w='32655' x='66652' y='8952'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69108' id='9' is-fixed='true' name='Top 10' w='36010' x='693' y='29541'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69108' id='12' is-fixed='true' name='Application Trends' w='29949' x='36703' y='29541'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69108' id='15' is-fixed='true' name='First Decision Trends (2)' w='32655' x='66652' y='29541'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{77D46716-B2CB-49FD-B21A-581CE3F7C5A1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='2018 Apllications'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2018 Apllications (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2018 first'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Application Trends'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='First Decision Trends (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{D6F3ADAD-0D39-452D-9302-BB311742D0D9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='2018 Apllications'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{968F7011-7B84-4D53-8154-D39C26D0CA60}' />
+    </window>
+    <window class='worksheet' hidden='true' name='2018 Apllications (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C49C885E-8C02-40D1-AD1D-F9D5E7108819}' />
+    </window>
+    <window class='worksheet' hidden='true' name='2018 first'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[EU+]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:ok]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5010D838-86C6-4546-A6AA-2006A0CDF52F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Application Trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{71A51AEB-0678-4B26-B462-4C2023A5C271}' />
+    </window>
+    <window class='worksheet' hidden='true' name='First Decision Trends (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[sum:2018 Applications:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[:Measure Names]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Application Type:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975485954:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F10DDA16-F554-4B50-9BFB-04D4AE04718D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[io:Set 3:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:Calculation_692991394975670275:nk]</field>
+            <field>[federated.14e0iuv0mcymoo11mnuug1j4lyxt].[none:SEX:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{507A1722-C4B2-439E-B161-076F29CC2D82}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+      VV2zKz3BFbFdmWJ1OBw3/J4XKl6vl6997Wt0dnbyve99D51OhyAIPPzwwzzyyCN0d3dfM0N4
+      hVtyDHA9DA3NpMzr6empNj6LxUJDQwPxeLwa/jwXzz33HMFgkPe9733XNNbly5cjk8l46aWX
+      rgp5VqlU1RDs9vZ2DAYDJ06cqM4MCYLAwYMHkcvldHd338jbXdBMTk6Sy+Xo6OhAq53JRCeX
+      y+np6UEURYaHh+c89pYUQCKRwOfz4fP5mJ6eBmZeTvH5fPj9fgRBYMWKFQA8/PDDnD59Go/H
+      w09+8hNOnDiB2+2uDmhfeuklPv7xj/Pkk09Wzy+KIi+//DJms5n77rvvGldp1apV9PT08Pzz
+      z/OjH/0Ij8fDnj172L17N263m/b2durq6ti0aRPDw8N897vfZXx8nEcffZRXX32Vrq4uli1b
+      9g49rVubYrFY/a6vvOeRz+ern2UyGdra2jCbzezZs4cnn3wSr9fLoUOH+NGPfoRcLqe3txeA
+      eDzOgw8+yJe+9KXq9PktGQ79rW99i0ceeWTWMrPZzOOPP45Wq+Wv//qvee65567yt10uF1/5
+      yldYv349giDw2c9+ltOnT/Pd736Xvr4+YOb1ygceeIC7776bL37xi7OOFcbHx/mTP/kTRkZG
+      qp/V1NTw5S9/ma1btwIzizNf+MIXOH/+fLVOfX09f/d3fyf1ANfJwMAAH/3oR+d8ueihhx7i
+      3nvvZffu3XzjG9+ovhEIoFar+dCHPsSnP/1plEolTz31FA899BAf+tCH+NznPnfrvhBz+PDh
+      OacRNRoNDzzwABqNBkEQGBwc5OTJkxQKBRobG1m3bl3V9x8dHeVjH/sYH/nIR/jkJz9ZbehD
+      Q0Ps27ePXbt20dDQMOt1ADKZDIcPH2Z8fByr1crmzZuvejMMZgbMBw8exOPx4HQ62bp1q7QK
+      /F8gEonw5JNPzimA22+/nUWLZlLWT01NceTIEaampjAYDKxdu5a2tjbkcjmVSoXPfvazJJNJ
+      /uEf/gGzeWYfiVtSADeKH/zgB5w4cYKHH34YnW6uvQ0k3g2Mjo7yqU99im9+85tXuZ8LVgCi
+      KLJ37166u7vfcKFE4t3ByMgIoVCIjRs3XtVDL1gBSEjALToLJCFxo5AEILGgeUdXggcHB0km
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
